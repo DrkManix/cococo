@@ -1,0 +1,174 @@
+html,
+body {
+
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #8EE4FE;
+    overflow-y: hidden;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes example {
+  0%   { background-color: #FEE717; }
+  50%  { background-color: #FE81CC; }
+  100% { background-color: #8EE4FE; }
+}
+
+.txt {
+    font-family: courier;
+    font-size: 4em;
+    color: red;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.anim {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.square0 {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 300px;
+    width: 150px;
+    height: 150px;
+
+    animation-name: spin-left;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square0 img{
+  width: 100%;
+}
+
+.square1 {
+  position: absolute;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 300px;
+    width: 150px;
+    height: 150px;
+
+    animation-name: spin-left;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square1 img{
+  width: 100%;
+}
+
+.square2 {
+  display: inline-block;
+  margin-top: 300px;
+  margin-left: 250px;
+    width: 300px;
+    height: 300px;
+
+    animation-name: spin-right;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square2 img{
+  width: 100%;
+}
+
+
+.square3 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+    width: 200px;
+    height: 200px;
+
+    animation-name: spin-right;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square3 img{
+  width: 100%;
+}
+
+.square4 {
+  display: inline-block;
+  position: relative;
+    width: 200px;
+    height: 200px;
+
+    animation-name: spin-right;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square4 img{
+  width: 100%;
+}
+
+.square5 {
+  display: inline-block;
+  position: relative;
+    width: 200px;
+    height: 200px;
+
+    animation-name: spin-right;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square5 img{
+  width: 100%;
+}
+
+.square8 {
+  position: absolute;
+  display: inline-block;
+    width: 100%;
+
+    animation-name: spin-left;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.square8 img{
+  width: 100%;
+}
+
+
+@keyframes spin-left {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-right {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
